@@ -23,7 +23,6 @@ The Smart Multimodal Product Price Prediction System uses the pretrained CLIP Vi
 -tailwindcss
 -axios
 
-
 **Backend:**
 (PYTHON)
 -fastapi
@@ -39,6 +38,10 @@ The Smart Multimodal Product Price Prediction System uses the pretrained CLIP Vi
 -python-multipart
 -Requests
 
+## Dataset
+Training samples: 25,000 products
+Test samples: 100 products (sample_test.csv)
+Fields: sample_id, catalog_content, image_link, price
 
 ## Installation
 -Backend
@@ -50,13 +53,7 @@ The requirements.txt file is provided along with the project folder.
 For installing all required frontend packages, run the following command in the terminal:
 npm install
 
-## Demo Credentials
-
-- Email: seller@pricewise.com
-- Password: seller123
-
 ## Usage
-
 1. Open http://localhost:3000
 2. Click "Get Started" or "Login"
 3. Login with demo credentials
@@ -124,14 +121,16 @@ Click the Predict Price button
 The system will display the predicted price with a category label
 
 ## Output of the Program
-
 The output will display:
 Predicted selling price in dollars ($)
 Category label — Budget / Mid-range / Premium / Luxury
 Quality message based on predicted price range
 
-## Model Training (Google Colab)
+## Demo Credentials
+- Email: seller@pricewise.com
+- Password: seller123
 
+## Model Training (Google Colab)
 To retrain the models, upload the training script to Google Colab and follow these steps:
 -Upload train.csv to Colab
 -Run all cells from Step 1 to Step 8
@@ -142,12 +141,6 @@ Files saved after training:
 -pca_reducer.joblib — PCA reducer
 -model_comparison.csv — Results table
 Download these files and place them in the backend/models/ folder before running the backend.
-
-## Dataset
-
-Training samples: 25,000 products
-Test samples: 100 products (sample_test.csv)
-Fields: sample_id, catalog_content, image_link, price
 
 ## Important Notes
 Make sure both frontend and backend are running simultaneously for proper execution.
