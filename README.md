@@ -54,7 +54,7 @@ For installing all required frontend packages, run the following command in the 
 npm install
 
 ## Usage
-1. Open http://localhost:3000
+1. Open 
 2. Click "Get Started" or "Login"
 3. Login with demo credentials
 4. Upload product image
